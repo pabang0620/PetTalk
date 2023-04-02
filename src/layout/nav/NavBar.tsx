@@ -13,7 +13,14 @@ const NavBar = () => {
   return (
     <>
       <nav>
-        <div className="logoStyle">PetTalk</div>
+        <div className="navLeft">
+          <div className="logoStyle">PetTalk</div>
+          <ul className="navLeft">
+            <li>커뮤니티</li>
+            <li>쇼핑</li>
+          </ul>
+        </div>
+
         <div onClick={navModalOn}>icon</div>
       </nav>
       <table></table>
@@ -25,10 +32,21 @@ const NavBar = () => {
           font-size: 35px;
           font-weight: 700;
         }
+        .navLeft {
+          display: flex;
+          flex-direction: row;
+          margin: 0px 20px;
+          align-items: center;
+        }
+        li {
+          margin: 0px 10px;
+          font-size: 18px;
+          font-weight: 600;
+        }
         nav {
           position: absolute;
           width: 100vw;
-          height: 60px;
+          height: 81px;
           background-color: #ff9800;
           display: flex;
           flex-direction: row;
