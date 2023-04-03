@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import NavModal from './NavModal';
+import React, { useState } from "react";
+import NavModal from "./NavModal";
 
 const NavBar = () => {
   const [navModal, setNavModal] = useState(false);
@@ -21,22 +21,32 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <div onClick={navModalOn}>icon</div>
+        <div className="profileImg" onClick={navModalOn}></div>
       </nav>
       <table></table>
       {navModal === true && <NavModal />}
       <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap");
         .logoStyle {
-          font-family: 'Kalam', cursive;
+          font-family: "Kalam", cursive;
           font-size: 35px;
           font-weight: 700;
+        }
+        .profileImg {
+          margin: 0px 200px 0px 0px;
+          width: 50px;
+          height: 50px;
+          background-color: white;
+          border-radius: 50%;
         }
         .navLeft {
           display: flex;
           flex-direction: row;
-          margin: 0px 20px;
+          margin: 0px 20px 0px 200px;
           align-items: center;
+        }
+        .navLeft ul {
+          margin: 0px 20px;
         }
         li {
           margin: 0px 10px;
@@ -50,7 +60,7 @@ const NavBar = () => {
           background-color: #ff9800;
           display: flex;
           flex-direction: row;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
         }
         table {

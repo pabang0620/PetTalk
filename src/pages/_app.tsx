@@ -37,6 +37,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         }
         a {
           text-decoration: none;
+          white-space: nowrap;
         }
         li {
           list-style: none;

@@ -3,7 +3,7 @@ import React from "react";
 
 const NavModal = () => {
   return (
-    <div>
+    <div className="navRelate">
       <div className="direction"></div>
       <ul className="navModal">
         <li>
@@ -20,10 +20,13 @@ const NavModal = () => {
         </li>
       </ul>
       <style jsx>{`
+        .navRelate {
+          position: relative;
+        }
         .direction {
           position: absolute;
-          left: 78%;
-          bottom: 91.7%;
+          left: 88%;
+          top: 20px;
           margin-top: 4px;
           border: 1px solid #cdcdcd;
           background-color: #fff;
@@ -35,8 +38,8 @@ const NavModal = () => {
         }
         .navModal {
           position: absolute;
-          top: 70px;
-          left: 75%;
+          top: 30px;
+          left: 85%;
           border: 1px solid #e2e2e2;
           border-radius: 5px;
           padding: 5px;
@@ -45,7 +48,6 @@ const NavModal = () => {
         }
         a {
           font-size: 16px;
-          list-style: none;
           padding: 10px 20px;
           border-radius: 5px;
           text-align: center;
