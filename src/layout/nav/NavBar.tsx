@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import NavModal from "./NavModal";
+import React, { useState } from 'react';
+import NavModal from './NavModal';
 
 const NavBar = () => {
   const [navModal, setNavModal] = useState(false);
@@ -26,9 +26,9 @@ const NavBar = () => {
       <table></table>
       {navModal === true && <NavModal />}
       <style jsx>{`
-        @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap');
         .logoStyle {
-          font-family: "Kalam", cursive;
+          font-family: 'Kalam', cursive;
           font-size: 35px;
           font-weight: 700;
         }
