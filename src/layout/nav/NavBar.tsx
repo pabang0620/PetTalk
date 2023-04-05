@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import NavModal from "./NavModal";
 
 const NavBar = () => {
@@ -14,26 +15,39 @@ const NavBar = () => {
     <>
       <nav>
         <div className="navLeft">
-          <div className="logoStyle">PetTalk</div>
-          <ul className="navLeft">
-            <li>커뮤니티</li>
-            <li>쇼핑</li>
-          </ul>
+          <div className="logoStyle">
+            <Link href="/">PetTalk</Link>
+          </div>
         </div>
-
+        <ul className="navLeft">
+          <li>
+            <Link href="#">커뮤니티</Link>
+          </li>
+          <li>
+            <Link href="shopping">쇼핑</Link>
+          </li>
+        </ul>
         <div className="profileImg" onClick={navModalOn}></div>
       </nav>
       <table></table>
       {navModal === true && <NavModal />}
       <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap");
+        li {
+          width: 100px;
+          margin: 0px;
+          font-size: 18px;
+          font-weight: 600;
+          text-align: center;
+        }
         .logoStyle {
           font-family: "Kalam", cursive;
           font-size: 35px;
           font-weight: 700;
+          margin: 0px 0px 0px 120px;
         }
         .profileImg {
-          margin: 0px 200px 0px 0px;
+          margin: 0px 100px 0px 0px;
           width: 50px;
           height: 50px;
           background-color: white;
@@ -42,22 +56,15 @@ const NavBar = () => {
         .navLeft {
           display: flex;
           flex-direction: row;
-          margin: 0px 20px 0px 200px;
+          padding: 0px;
+          margin: 0px;
           align-items: center;
         }
-        .navLeft ul {
-          margin: 0px 20px;
-        }
-        li {
-          margin: 0px 10px;
-          font-size: 18px;
-          font-weight: 600;
-        }
         nav {
-          position: absolute;
+          position: fixed;
           width: 100vw;
-          height: 81px;
-          background-color: #ff9800;
+          height: 70px;
+          background-color: #ffb951;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -65,7 +72,7 @@ const NavBar = () => {
         }
         table {
           width: 100vw;
-          height: 60px;
+          height: 70px;
         }
         p {
           margin: 0;

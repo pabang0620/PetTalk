@@ -7,7 +7,7 @@ const NavModal = () => {
       <div className="direction"></div>
       <ul className="navModal">
         <li>
-          <Link href="#">마이페이지</Link>
+          <Link href="/mypage">마이페이지</Link>
         </li>
         <li>
           <Link href="#">나의 쇼핑</Link>
@@ -15,18 +15,22 @@ const NavModal = () => {
         <li>
           <Link href="#">나의 게시글</Link>
         </li>
-        <li>
+        <li className="logoutBorder">
           <Link href="#">로그아웃</Link>
         </li>
       </ul>
       <style jsx>{`
+        .logoutBorder {
+          margin-top: 7px;
+          border-top: 1px solid #cdcdcd;
+        }
         .navRelate {
           position: relative;
         }
         .direction {
           position: absolute;
-          left: 88%;
-          top: 20px;
+          right: 115px;
+          top: 10px;
           margin-top: 4px;
           border: 1px solid #cdcdcd;
           background-color: #fff;
@@ -38,29 +42,17 @@ const NavModal = () => {
         }
         .navModal {
           position: absolute;
-          top: 30px;
-          left: 85%;
+          top: 20px;
+          right: 70px;
           border: 1px solid #e2e2e2;
           border-radius: 5px;
           padding: 5px;
           margin: 0px;
           background-color: white;
-        }
-        a {
-          font-size: 16px;
-          padding: 10px 20px;
-          border-radius: 5px;
-          text-align: center;
-          white-space: nowrap;
-        }
-        a:hover {
-          background-color: #f0ecec;
-        }
-        a:visited {
-          color: black;
+          z-index: 30;
         }
         li {
-          width: 6vw;
+          width: 8vw;
           font-size: 16px;
           list-style: none;
           padding: 10px 20px;

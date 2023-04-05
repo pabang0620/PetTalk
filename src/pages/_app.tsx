@@ -32,12 +32,18 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
           font-style: normal;
         }
         body {
+          width: 100vw;
+          overflow-x: hidden;
           font-family: "Pretendard-Regular";
           margin: 0px;
+          background-color: #fff1dc;
         }
         a {
           text-decoration: none;
           white-space: nowrap;
+        }
+        a:visited {
+          color: black;
         }
         li {
           list-style: none;
