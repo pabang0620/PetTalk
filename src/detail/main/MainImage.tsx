@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const MainImage = () => {
   return (
@@ -30,7 +30,7 @@ const MainImage = () => {
         }
         .test {
           margin-top: 55px;
-          width: 1700px !important;
+          width: 80% !important;
           height: 600px !important;
           background-color: black !important;
         }
