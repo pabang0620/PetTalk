@@ -1,11 +1,12 @@
 import Image from "next/image";
+import AnimationBanner from "./AnimationBanner";
 
 const MainImage = () => {
   return (
     <div className="flexflex">
       <div>
         <div className="test"></div>
-        <div className="test"></div>
+        <AnimationBanner />
         <div className="test"></div>
       </div>
 
@@ -30,9 +31,11 @@ const MainImage = () => {
         }
         .test {
           margin-top: 55px;
-          width: 1700px !important;
+          width: 88% !important;
           height: 600px !important;
           background-color: black !important;
+          display: flex;
+          flex-direction: row;
         }
       `}</style>
     </div>
