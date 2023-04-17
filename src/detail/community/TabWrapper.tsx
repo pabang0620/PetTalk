@@ -2,6 +2,7 @@ import SpeechBubbleTab from './SpeechBubbleTab';
 import Image from 'next/image';
 import Tab from './Tab';
 import Link from 'next/link';
+import ContentDetail from './ContentDetail';
 
 const TabWrapper = () => {
   return (
@@ -22,7 +23,7 @@ const TabWrapper = () => {
           </Link>
         </div>
         <div className="mainWrapper">
-          <div className="main"></div>
+          <ContentDetail />
         </div>
       </div>
       <style jsx>{`
@@ -47,11 +48,16 @@ const TabWrapper = () => {
           align-items: center;
         }
         .mainWrapper {
+          box-sizing: border-box;
           width: 90vw;
           height: 73vh;
           border: 2.4px solid #ffb951;
           background-color: rgb(249, 245, 235);
           border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
         }
         .main {
         }
