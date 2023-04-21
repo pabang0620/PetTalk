@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react';
-import Head from 'next/head';
-import NavBar from './nav/NavBar';
-import MainDetail from '@/detail/main/MainDetail';
+import React, { ReactNode } from "react";
+import Head from "next/head";
+import NavBar from "./nav/NavBar";
+import MainDetail from "@/detail/main/MainDetail";
 
 type DefaultLayoutProps = { children: ReactNode };
 
