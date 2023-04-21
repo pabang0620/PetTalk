@@ -44,7 +44,7 @@ const ShoppingFilter = () => {
         .filterAll {
           outline: none;
           border: none;
-          width: 150px;
+          width: 22vw;
           height: 40px;
           line-height: 40px;
           border-radius: 5%;

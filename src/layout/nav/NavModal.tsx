@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 const NavModal = () => {
   return (
@@ -31,7 +31,6 @@ const NavModal = () => {
           position: absolute;
           right: 115px;
           top: 10px;
-
           margin-top: 4px;
           border: 1px solid #cdcdcd;
           background-color: #fff;
@@ -45,7 +44,6 @@ const NavModal = () => {
           position: absolute;
           top: 20px;
           right: 70px;
-
           border: 1px solid #e2e2e2;
           border-radius: 5px;
           padding: 5px;
@@ -63,6 +61,13 @@ const NavModal = () => {
         }
         li:hover {
           background-color: #f0ecec;
+        }
+        a {
+          text-decoration: none;
+          white-space: nowrap;
+        }
+        a:visited {
+          color: black !important;
         }
       `}</style>
     </div>
