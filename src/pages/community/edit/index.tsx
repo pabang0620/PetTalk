@@ -1,10 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const Edit = () => {
-  return <>
-  
-  </>;
-
-}
+  return (
+    <>
+      <div>post page</div>
+    </>
+  );
+};
 
 export default Edit;
