@@ -10,19 +10,9 @@ export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
     <>
       <NavBar></NavBar>
       <Head>
-        <title>PetTalk - 반려동물</title>
+        <title>PetTalk</title>
       </Head>
-      <div className="main-page">
-        <MainDetail />
-        <main>{children}</main>
-      </div>
-      <style jsx>{`
-        .main-page {
-          display: flex;
-          flex-direction: column;
-          margin-top: 40px;
-        }
-      `}</style>
+      <main>{children}</main>
     </>
   );
 };
