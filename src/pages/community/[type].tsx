@@ -1,6 +1,6 @@
 import CommunityDetail from '@/detail/community/CommunityDetail';
 
-const share = () => {
+const Type = () => {
   return (
     <>
       <CommunityDetail />
@@ -8,4 +8,4 @@ const share = () => {
   );
 };
 
-export default share;
+export default Type;
