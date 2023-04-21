@@ -1,38 +1,36 @@
-import Bird from "/src/assets/images/BirdIcon.png";
-import Cat from "/src/assets/images/CatIcon.png";
-import Dog from "/src/assets/images/DogIcon.png";
-import Fish from "/src/assets/images/FishIcon.png";
-import Hamster from "/src/assets/images/HamsterIcon.png";
-import Reptile from "/src/assets/images/ReptileIcon.png";
-import Image from "next/image";
+import Image from 'next/image';
 
-interface TempNum {
-  IconNum?: number;
-}
-
-const CircleButton = (props: TempNum) => {
-  const { IconNum } = props;
-  const TempList = [Bird, Cat, Dog, Fish, Hamster, Reptile];
+const CircleButton = () => {
+  const IconNameList: string[] = [
+    'Bird',
+    'Cat',
+    'Dog',
+    'Fish',
+    'Hamster',
+    'Reptile',
+    'LoveAnimal',
+  ];
+  const srcHandler = (name: string) => {
+    return `/images/${name}Icon.png`;
+  };
   return (
     <>
-      <div className="temp-list">
-        {TempList.map((item) => (
+      <div className="iconList">
+        {IconNameList.map((item) => (
           <div className="circle" key={null}>
-            <Image src={item} alt="실패" width={50} height={50} />
+            <Image src={srcHandler(item)} alt="실패" width={50} height={50} />
           </div>
         ))}
       </div>
       <style jsx>{`
-        .temp-list {
+        .iconList {
           display: flex;
           flex-direction: row;
           justify-content: center;
-           {
-            /* margin-left: 350px; */
-          }
         }
         .circle {
-          border-radius: 50%;
+          /* border-radius: 50%; */
+          border-radius: 23px;
           width: 80px;
           height: 80px;
           background-color: #ffe0b2;
