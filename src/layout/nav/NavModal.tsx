@@ -7,10 +7,10 @@ const NavModal = () => {
       <div className="direction"></div>
       <ul className="navModal">
         <li>
-          <Link href="/mypage">마이페이지</Link>
+          <Link href="mypage">마이페이지</Link>
         </li>
         <li>
-          <Link href="#">나의 쇼핑</Link>
+          <Link href="bookMark">북마크</Link>
         </li>
         <li>
           <Link href="#">나의 게시글</Link>
@@ -52,7 +52,7 @@ const NavModal = () => {
           z-index: 30;
         }
         li {
-          width: 8vw;
+          width: 7vw;
           font-size: 16px;
           list-style: none;
           padding: 10px 20px;

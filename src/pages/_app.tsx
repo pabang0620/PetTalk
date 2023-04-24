@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import type { AppProps } from "next/app";
 import { ReactElement, ReactNode } from "react";
 import { DefaultLayout } from "@/layout/DefaultLayout";
+import { RecoilRoot } from "recoil";
 
 export type NextPageWithLayout<
   TProps = Record<string, unknown>,
@@ -21,8 +22,9 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
 
   return getLayout(
     <>
-      <Component {...pageProps} />
-
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
       <style jsx global>{`
         @font-face {
           font-family: "Pretendard-Regular";
