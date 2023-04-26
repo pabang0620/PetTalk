@@ -15,10 +15,10 @@ const New: NextPage = () => {
   const [editorSize, setEditorSize] = useState<number>();
 
   useEffect(() => {
-    setEditorSize(window.innerHeight * 0.65);
+    setEditorSize(window.innerHeight * 0.7);
   }, []);
   const handleResize = () => {
-    setEditorSize(window.innerHeight * 0.65);
+    setEditorSize(window.innerHeight * 0.7);
   };
 
   useEffect(() => {
@@ -112,6 +112,7 @@ const New: NextPage = () => {
           margin-top: 30px;
           width: 100%;
           height: 80vh;
+          margin-top: 6vh;
         }
         .selectWrapper {
           height: 100px;
@@ -123,7 +124,6 @@ const New: NextPage = () => {
           border-radius: 5px;
           background-color: rgb(253, 251, 246);
           padding: 10px;
-          margin-top: 40px;
         }
         .selectBox {
           display: flex;
