@@ -27,11 +27,6 @@ const TabWrapper = () => {
         </div>
       </div>
       <style jsx>{`
-         {
-          /* background-color: #f7e3c4; 연한거
-          background-color: #f4d6a8;  진한거 */
-        }
-
         .wrapper {
           display: flex;
           flex-direction: row;
@@ -50,7 +45,7 @@ const TabWrapper = () => {
         .mainWrapper {
           box-sizing: border-box;
           width: 90vw;
-          height: 73vh;
+          height: 79vh;
           border: 2.4px solid #ffb951;
           background-color: rgb(249, 245, 235);
           border-radius: 20px;

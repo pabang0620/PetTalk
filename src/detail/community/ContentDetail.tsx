@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ContentDetail = () => {
   return (
@@ -6,7 +7,7 @@ const ContentDetail = () => {
       <div className="contentWrapper">
         <div className="header">
           <div className="searchBox">
-            <div></div>
+            <input className="searchInput"></input>
             <button className="searchButton">
               <Image
                 src="/images/searchIcon.png"
@@ -16,9 +17,13 @@ const ContentDetail = () => {
               />
             </button>
           </div>
-          <button className="editButton">글 쓰기</button>
+          <Link href="/community/edit/new">
+            <button className="editButton">글 쓰기</button>
+          </Link>
         </div>
-        <div className="contentBox">내용 부분 <br/> 구분을 위해 일단 색을 채워넣음</div>
+        <div className="contentBox">
+          내용 부분 <br /> 구분을 위해 일단 색을 채워넣음
+        </div>
       </div>
       <style jsx>{`
         .contentWrapper {
@@ -31,20 +36,28 @@ const ContentDetail = () => {
         .header {
           display: flex;
           flex-direction: row;
-          width: 50%;
+          width: 40vw;
           justify-content: space-between;
         }
         .searchBox {
           background-color: #ffedcf;
           border: 2px solid #f4d6a8;
           border-radius: 5px;
-          width: 360px;
+          width: 30vw;
           height: 30px;
           position: relative;
         }
+        .searchInput {
+          border: none;
+          background-color: inherit;
+          width: 89%;
+          height: 89%;
+        }
+
         .searchButton {
           position: absolute;
           right: 0px;
+          top: 0;
           padding-right: 5px;
           padding-left: 9px;
           width: 35px;
@@ -58,7 +71,7 @@ const ContentDetail = () => {
           background-color: #f4d6a8;
         }
         .editButton {
-          width: 100px;
+          width: 8vw;
           height: 33px;
           border: 2px solid #f4d6a8;
           border-radius: 5px;
@@ -71,7 +84,7 @@ const ContentDetail = () => {
         .contentBox {
           width: 100%;
           margin-top: 20px;
-          height: 86.5%;
+          height: 90.5%;
           border-radius: 10px;
           background-color: #ffedcf;
         }
