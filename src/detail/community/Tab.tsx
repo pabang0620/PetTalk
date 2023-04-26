@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
+
 
 interface PropsList {
   tabname: string;
@@ -12,7 +12,7 @@ const Tab = (props: PropsList) => {
 
   return (
     <>
-      {router.pathname == routername ? (
+      {router.asPath == routername ? (
         <div>
           <div className="tabBox tabActive">
             <Image

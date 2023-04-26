@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ContentDetail = () => {
   return (
@@ -16,9 +17,13 @@ const ContentDetail = () => {
               />
             </button>
           </div>
-          <button className="editButton">글 쓰기</button>
+          <Link href="/community/edit/new">
+            <button className="editButton">글 쓰기</button>
+          </Link>
         </div>
-        <div className="contentBox">내용 부분 <br/> 구분을 위해 일단 색을 채워넣음</div>
+        <div className="contentBox">
+          내용 부분 <br /> 구분을 위해 일단 색을 채워넣음
+        </div>
       </div>
       <style jsx>{`
         .contentWrapper {
@@ -31,7 +36,7 @@ const ContentDetail = () => {
         .header {
           display: flex;
           flex-direction: row;
-          width: 50%;
+          width: 500px;
           justify-content: space-between;
         }
         .searchBox {
