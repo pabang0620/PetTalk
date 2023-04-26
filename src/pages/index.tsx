@@ -6,13 +6,6 @@ export default function Home() {
       <div className="main-page">
         <MainDetail />
       </div>
-      <style jsx>{`
-        .main-page {
-          display: flex;
-          flex-direction: column;
-          margin-top: 40px;
-        }
-      `}</style>
     </>
   );
 }

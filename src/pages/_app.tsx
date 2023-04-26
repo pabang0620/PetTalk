@@ -1,4 +1,3 @@
-import NavBar from "@/layout/nav/NavBar";
 import "@/styles/globals.css";
 import { NextPage } from "next";
 import type { AppProps } from "next/app";
@@ -23,6 +22,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return getLayout(
     <>
       <Component {...pageProps} />
+
       <style jsx global>{`
         @font-face {
           font-family: "Pretendard-Regular";
@@ -30,23 +30,6 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
             format("woff");
           font-weight: 400;
           font-style: normal;
-        }
-        body {
-          width: 100vw;
-          overflow-x: hidden;
-          font-family: "Pretendard-Regular";
-          margin: 0px;
-          background-color: #fff1dc;
-        }
-        a {
-          text-decoration: none;
-          white-space: nowrap;
-        }
-        a:visited {
-          color: black;
-        }
-        li {
-          list-style: none;
         }
       `}</style>
     </>

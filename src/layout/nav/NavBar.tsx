@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import NavModal from './NavModal';
+import React, { useState } from "react";
+import Link from "next/link";
+import NavModal from "./NavModal";
 
 const NavBar = () => {
   const [navModal, setNavModal] = useState(false);
@@ -21,10 +21,10 @@ const NavBar = () => {
         </div>
         <ul className="navLeft">
           <li>
-            <Link href="community">커뮤니티</Link>
+            <Link href="/community">커뮤니티</Link>
           </li>
           <li>
-            <Link href="shopping">쇼핑</Link>
+            <Link href="/shopping">쇼핑</Link>
           </li>
         </ul>
         <div className="profileImg" onClick={navModalOn}></div>
@@ -32,7 +32,7 @@ const NavBar = () => {
       <table></table>
       {navModal === true && <NavModal />}
       <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans+KR:wght@400;500&display=swap");
         li {
           width: 100px;
           margin: 0px;
@@ -41,7 +41,7 @@ const NavBar = () => {
           text-align: center;
         }
         .logoStyle {
-          font-family: 'Kalam', cursive;
+          font-family: "Kalam", cursive;
           font-size: 35px;
           font-weight: 700;
           margin: 0px 0px 0px 120px;

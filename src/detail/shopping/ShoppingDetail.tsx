@@ -39,9 +39,9 @@ const ShoppingDetail = () => {
     <div className="shoppingDetail">
       <ShoppingFilter></ShoppingFilter>
       <div className="productWrap">
-        {productData.map((data: product) => (
+        {productData.map((data: product, index) => (
           <Product
-            key={1}
+            key={index}
             imgSrc={data.imgSrc}
             company={data.company}
             product={data.product}
