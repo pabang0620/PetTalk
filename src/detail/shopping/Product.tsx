@@ -9,6 +9,8 @@ const Product = ({ imgSrc, company, product, price, id }: product) => {
   const [bookmarkList, setBookmarkList] = useRecoilState(bookmarkListState);
   const [bookMarkIcon, setBookMarkIcon] = useState(false);
 
+  // 북마크 여부 usememo 유저정보 바뀔 때 다시 계산되게끔 isbookmarked
+  //  함수는 무조건 usecallback 해주는게 좋다
   const mappingData = {
     imgSrc: imgSrc,
     company: company,
@@ -34,7 +36,6 @@ const Product = ({ imgSrc, company, product, price, id }: product) => {
 
   const bookMarkClick = () => {
     setBookMarkIcon(true);
-
     if (bookMarkIcon === false) {
       swal({
         title: "북마크에 추가되었습니다.",

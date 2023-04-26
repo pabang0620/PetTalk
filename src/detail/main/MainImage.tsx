@@ -21,8 +21,6 @@ const MainImage = () => {
         <div className="doration">
           <div className="image-wrapper">
             <div className="spanColor1" />
-            <div className="spanColor2" />
-            <div className="spanColor3" />
           </div>
         </div>
         <div className="test">깃이나 각자가 맡은 역할 넣을 부분</div>
@@ -63,7 +61,7 @@ const MainImage = () => {
           flex-direction: row;
           flex-wrap: nowrap;
           transition: transform 100s ease-out;
-          transform: translateX(-${imageIndex * 100}%);
+          transform: translateX(-${imageIndex * 50}%);
         }
         .image-wrapper span {
           width: 33.33%;
@@ -73,6 +71,7 @@ const MainImage = () => {
         .spanColor1 {
           z-index: 20;
           background-color: aqua !important;
+          height: 400px !important;
         }
         .spanColor2 {
           z-index: 20;
