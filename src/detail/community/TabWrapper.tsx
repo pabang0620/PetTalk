@@ -1,7 +1,6 @@
-import Image from "next/image";
-import Tab from "./Tab";
-import Link from "next/link";
-import ContentDetail from "./ContentDetail";
+import Tab from './Tab';
+import Link from 'next/link';
+import ContentDetail from './ContentDetail';
 
 const TabWrapper = () => {
   return (

@@ -50,60 +50,12 @@ const New: NextPage = () => {
             </label>
           </div>
         </div>
-        {/* <div className="sampleWrapper">
-          <div>
-            <select className="sampleSelectBox">
-              <option>개</option>
-              <option>고양이</option>
-              <option>새</option>
-              <option>파충류</option>
-              <option>기타</option>
-            </select>
-            <select className="sampleSelectBox">
-              <option>정보공유</option>
-              <option>일상</option>
-              <option>질문</option>
-            </select>
-          </div>
-          <label>
-            <input
-              className="sampleTitle"
-              type="text"
-              placeholder="제목을 입력해주세요..."
-            ></input>
-          </label>
-        </div> */}
+
         <div className="editorBox">
           <MDEditor value={md} onChange={setMd} height={editorSize} />
         </div>
       </div>
       <style jsx>{`
-        .sampleWrapper {
-          border: solid 2px #ffb951;
-          border-radius: 5px;
-          height: 50px;
-          width: 95%;
-          margin-bottom: 10px;
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          background-color: rgb(253, 251, 246);
-        }
-        .sampleSelectBox {
-          height: 30px;
-          width: 10vw;
-          border-radius: 5px;
-        }
-        .sampleSelectBox:first-child {
-          margin-right: 15px;
-        }
-        .sampleTitle {
-          width: 70vw;
-          height: 26.8px;
-          border: 1px solid rgba(74, 64, 49, 0.833);
-          border-radius: 5px;
-        }
-
         .editorWrapper {
           display: flex;
           flex-direction: column;
@@ -113,10 +65,10 @@ const New: NextPage = () => {
           width: 100%;
           height: 80vh;
           margin-top: 6vh;
-        }
+        
         .selectWrapper {
           height: 100px;
-          width: 50%;
+          width: 93.5%;
           display: flex;
           flex-direction: column;
           margin-bottom: 13px;
