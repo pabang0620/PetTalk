@@ -69,6 +69,7 @@ const NavBar = () => {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          z-index: 200;
         }
         table {
           width: 100vw;

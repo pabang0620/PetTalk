@@ -7,10 +7,10 @@ const NavModal = () => {
       <div className="direction"></div>
       <ul className="navModal">
         <li>
-          <Link href="mypage">마이페이지</Link>
+          <Link href="/mypage">마이페이지</Link>
         </li>
         <li>
-          <Link href="bookMark">북마크</Link>
+          <Link href="/bookMark">북마크</Link>
         </li>
         <li>
           <Link href="#">나의 게시글</Link>
@@ -25,12 +25,11 @@ const NavModal = () => {
           border-top: 1px solid #cdcdcd;
         }
         .navRelate {
-          position: relative;
         }
         .direction {
-          position: absolute;
-          right: 115px;
-          top: 10px;
+          position: fixed;
+          top: 80px;
+          right: 100px;
           margin-top: 4px;
           border: 1px solid #cdcdcd;
           background-color: #fff;
@@ -41,9 +40,9 @@ const NavModal = () => {
           transform: rotate(-55deg) skewX(-22deg);
         }
         .navModal {
-          position: absolute;
-          top: 20px;
-          right: 70px;
+          position: fixed;
+          top: 90px;
+          right: 20px;
           border: 1px solid #e2e2e2;
           border-radius: 5px;
           padding: 5px;

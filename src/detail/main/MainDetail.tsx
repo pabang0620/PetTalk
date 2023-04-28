@@ -5,7 +5,6 @@ const MainDetail = () => {
   return (
     <>
       <MainImage />
-
       {/* <CircleButton /> */}
     </>
   );
