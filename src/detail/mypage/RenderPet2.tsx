@@ -1,26 +1,7 @@
-const RenderPet = () => {
+const RenderPet2 = () => {
   return (
     <>
       <div className="wrapper">
-        <div className="petBox">
-          <div>
-            <div className="row">
-              <div className="image">img</div>
-              <div className="col sideInterval">
-                <div>이름</div>
-                <div>OOO</div>
-                <div className="lineIterval">생일</div>
-                <div>2023.04.27</div>
-              </div>
-            </div>
-            <div className="col">
-              <div>종</div>
-              <div>OOOOO</div>
-              <div className="lineIterval">간단한 소개</div>
-              <div>안녕하세요 저희 OOO는 OOO</div>
-            </div>
-          </div>
-        </div>
         <div className="petBox">
           <div>
             <div className="row">
@@ -81,4 +62,4 @@ const RenderPet = () => {
   );
 };
 
-export default RenderPet;
+export default RenderPet2;

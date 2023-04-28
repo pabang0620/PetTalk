@@ -1,0 +1,1 @@
+export type CommunityTab = 'share' | 'question' | 'daily';
