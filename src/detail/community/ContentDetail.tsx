@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const ContentDetail = () => {
+  const [searchTerm, setSearchTerm] = useState<string | undefined>('');
   return (
     <>
       <div className="contentWrapper">
@@ -87,6 +89,7 @@ const ContentDetail = () => {
           height: 90.5%;
           border-radius: 10px;
           background-color: #ffedcf;
+          padding: 20px;
         }
       `}</style>
     </>
