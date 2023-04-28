@@ -19,7 +19,7 @@ const NavBar = () => {
             <Link href="/">PetTalk</Link>
           </div>
         </div>
-        <ul className="navLeft">
+        <ul className="navLeft fixed">
           <li>
             <Link href="/community">커뮤니티</Link>
           </li>
@@ -60,9 +60,14 @@ const NavBar = () => {
           margin: 0px;
           align-items: center;
         }
+        .fixed {
+          position: absolute;
+          left: 45vw;
+        }
         nav {
           position: fixed;
           width: 100vw;
+          max-width: 100%;
           height: 70px;
           background-color: #ffb951;
           display: flex;
@@ -73,6 +78,7 @@ const NavBar = () => {
         }
         table {
           width: 100vw;
+          max-width: 100%;
           height: 70px;
         }
         p {

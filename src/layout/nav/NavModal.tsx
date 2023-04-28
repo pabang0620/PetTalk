@@ -29,7 +29,7 @@ const NavModal = () => {
         .direction {
           position: fixed;
           top: 80px;
-          right: 100px;
+          right: 120px;
           margin-top: 4px;
           border: 1px solid #cdcdcd;
           background-color: #fff;
@@ -42,7 +42,7 @@ const NavModal = () => {
         .navModal {
           position: fixed;
           top: 90px;
-          right: 20px;
+          right: 40px;
           border: 1px solid #e2e2e2;
           border-radius: 5px;
           padding: 5px;

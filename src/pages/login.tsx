@@ -117,7 +117,7 @@ export default function adminLogin({}) {
         }
         .loginBox {
           position: absolute;
-          top: 18%;
+          top: 21%;
           width: 450px;
           height: 580px;
           background-color: white;

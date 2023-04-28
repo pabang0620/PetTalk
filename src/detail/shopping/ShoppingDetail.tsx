@@ -70,6 +70,7 @@ const ShoppingDetail = () => {
           justify-content: center;
           align-items: center;
           width: 100vw;
+          max-width: 100%;
         }
         .productWrap {
           display: flex;
