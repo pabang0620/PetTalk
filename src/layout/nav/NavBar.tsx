@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import NavModal from "./NavModal";
+import Image from "next/image";
 
 const NavBar = () => {
   const [navModal, setNavModal] = useState(false);
@@ -27,7 +28,14 @@ const NavBar = () => {
             <Link href="/shopping">쇼핑</Link>
           </li>
         </ul>
-        <div className="profileImg" onClick={navModalOn}></div>
+        <div className="profileImg" onClick={navModalOn}>
+          <Image
+            src="/images/petTalklogo.png"
+            alt="logo"
+            width={25}
+            height={25}
+          ></Image>
+        </div>
       </nav>
       <table></table>
       {navModal === true && <NavModal />}
@@ -52,6 +60,9 @@ const NavBar = () => {
           height: 50px;
           background-color: white;
           border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         .navLeft {
           display: flex;

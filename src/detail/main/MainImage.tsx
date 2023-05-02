@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Animation from "./Animation";
 
 const MainImage = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
@@ -19,6 +20,21 @@ const MainImage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
+  };
+
+  const settings2 = {
+    dots: true,
+    appendDots: (dots: any) => (
+      <div style={{ transform: "translateY(-150%)" }}>
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+    infinite: true,
+    speed: 500,
+    // autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplaySpeed: 3000,
   };
 
   // const [imageIndex, setImageIndex] = useState(0);
@@ -49,7 +65,7 @@ const MainImage = () => {
         </div>
         <div className="shoppingPageBox"></div>
         <div className="communityPageBox">
-          <Slider {...settings}>
+          <Slider {...settings2}>
             <div>
               <div className="testImg1"></div>
             </div>
@@ -57,7 +73,9 @@ const MainImage = () => {
               <div className="testImg2"></div>
             </div>
             <div>
-              <div className="testImg3"></div>
+              <div className="testImg3">
+                <Animation></Animation>
+              </div>
             </div>
           </Slider>
         </div>
@@ -81,6 +99,9 @@ const MainImage = () => {
           background-color: green;
           width: 100%;
           height: 600px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .mainPage {

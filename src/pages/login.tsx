@@ -31,7 +31,15 @@ export default function adminLogin({}) {
   return (
     <div className="loginPage">
       <div className="loginBox">
-        <div className="loginBoxHeader">로고???</div>
+        <div className="loginBoxHeader">
+          <Image
+            src="/images/petTalklogo.png"
+            alt="logo"
+            width={50}
+            height={50}
+          ></Image>
+          <p>PetTalk</p>
+        </div>
         <div className="loginInput">
           <input type="text" placeholder="아이디" />
           <input type="password" placeholder="비밀번호" />
@@ -81,10 +89,18 @@ export default function adminLogin({}) {
         .loginBoxHeader {
           height: 80px;
           width: 320px;
-          border: 1px solid #e2e2e2;
           border-radius: 5%;
           margin-bottom: 20px;
-          background-color: #e2e2e2;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .loginBoxHeader p {
+          font-family: "Kalam", cursive;
+          font-size: 35px;
+          font-weight: 700;
+          margin: 5px 0px 0px 12px;
         }
         .signButton button {
           margin-top: 30px;
